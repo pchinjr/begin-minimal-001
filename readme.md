@@ -6,15 +6,16 @@ A simple app with the minimum necessary file structure to get started on Begin.
 
 ## Deploy your own
 
-[![Deploy to Begin](https://static.begin.com/deploy-to-begin.svg)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-minimal)
+[![Deploy to Begin](https://static.begin.com/deploy-to-begin.svg)](https://begin.com/apps/create?template=https://github.com/pchinjr/begin-minimal-001)
 
 Deploy your own clone of this app to Begin!
 
-## Getting started
+## About this example
 
 - Start the local dev server: `npm start`
-- Lint your code: `npm run lint` (after you've installed a linter, of course)
-- Run your tests: `npm t` (don't forget to write some!)
+- There is a static folder `/public` which serves `./index.html` and `./about/index.html`
+- There is a `GET` route with data that can be requested at `/about`
+- `ARC_STATIC_SPA=false` is set as an environment variable when running `npm start` for local sandbox. 
 
 ## Reference
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,15 +12,14 @@
     <img src="https://static.begin.app/starter/begin-logo.svg" style="max-width: 250px" class="center-text">
     <div style="margin-bottom: 24px">
       <h1 style="margin-bottom: 24px" class="center-text">
-        Index, Beginner!
+        About, Beginner!
       </h1>
       <p style="margin-bottom: 8px">
-        This is the main index.html page
+        This is the about page.
       </p>
       <code>
-        public/index.html
+        public/about/index.html
       </code>
-      <p><a href="/about/index.html">Link to /about/index.html</a></p>
     </div>
     <div>
       <p style="margin-bottom: 8px">
@@ -30,6 +28,14 @@
       <a class="link" href="https://docs.begin.com" target="_blank">https://docs.begin.com</a>
     </div>
   </div>
-  <script type="module" src="index.js"></script>
+  <script>
+    fetch('/about')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+      });
+  </script>
 </body>
 </html>
